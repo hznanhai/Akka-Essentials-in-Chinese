@@ -18,6 +18,6 @@ Akka框架提供了一下特性：
 * **事件驱动架构：**Akka提供了一个异步消息平台用来构建事件驱动架构
 * **事务支持：**Akka implements transactors that combine the actors and software transactional memory (STM) into transactional actors
 * **位置透明性：**Akka为多核和分布式计算的需求提供了统一编程模型
-* **Scala/Java接口：**Akka支持使用Java和Scala的API来构建应用
+* **Scala/Java接口：**Akka同时支持使用Java和Scala的API来构建应用
 
 Akka框架被预想成一个用来在JVM上构建高并发、分布式和可容错的、事件驱动的应用的工具和运行时。
