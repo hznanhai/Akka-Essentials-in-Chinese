@@ -54,5 +54,5 @@ Akka框架被预想成一个用来在JVM上构建高并发、分布式和可容�
 这本书针对的是那些用Java/Scala来构建大型分布式并发和可扩展的应用的开发人员和架构师。这本书需要读者了解Java/J2EE的概念，但是不必要了解Actor模型。
 
 ## 下载示例代码
-你可以从
+你可以从[write2munish/Akka-Essentials](https://github.com/write2munish/Akka-Essentials)这个Github项目中下载到本书中使用到的示例代码。
 
