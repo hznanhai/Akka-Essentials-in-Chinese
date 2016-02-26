@@ -2,7 +2,7 @@
 
 《Akka Essentials》这本书的目的是想成为架构师们、解决方案提供者们、顾问们、工程师们和那些计划用Akka来设计并实现一个分布式的、并发的应用的人们的一份指南。本书将引用一些易于讲解概念的例子，因为它们或许是最好的教具。本书将讲解必要的逻辑、代码和配置项来构建一个成功的分布式并发应用，同时也会解释那些讨论背后的原因。
 
-本书覆盖了设计和实现一个分布式并发应用的核心概念，但是这并不意味着能取代发布在[Typesafe](http://doc.akka.io/docs/akka/)网站上的Akka的官方文档指南。
+本书覆盖了设计和实现一个分布式并发应用的核心概念，但是这并不意味着能取代发布在**[Typesafe](http://doc.akka.io/docs/akka/)**网站上的Akka的官方文档指南。
 
 
 ## Akka的Actor模型的驱动力
@@ -12,12 +12,12 @@
 Akka框架采用“Actor模型”的理念构建出一个事件驱动的中间件，从而能够构建并发的、可扩展的和分布式的系统。Akka使用Actor模型提取出抽象层从而将业务逻辑从底层的线程、锁和非阻塞IO的结构中解耦出来。
 
 Akka框架提供了一下特性：
-* 并发性：
-* 可扩展性：
-* 容错性：
-* 事件驱动架构：
-* 事务支持：
-* 位置透明性：
-* Scala/Java接口：
+* **并发性：**Akka的Actor模型抽象了并发处理，让开发人员专注于业务逻辑
+* **可扩展性：**Akka Actor模型的异步消息传递机制让应用能够在多核机器上纵向扩展
+* **容错性：**Akka从Erlang中引入了一些概念和技术构建了一个“Let It Crash”容错模型
+* **事件驱动架构：**Akka提供了一个异步消息平台用来构建事件驱动架构
+* **事务支持：**Akka implements transactors that combine the actors and software transactional memory (STM) into transactional actors
+* **位置透明性：**Akka为多核和分布式计算的需求提供了统一编程模型
+* **Scala/Java接口：**Akka支持Java和Scala的API来构建应用
 
 Akka框架被预想成一个用来在JVM上构建高并发、分布式和可容错的、事件驱动的应用的工具和运行时。
