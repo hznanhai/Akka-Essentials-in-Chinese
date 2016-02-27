@@ -5,23 +5,24 @@ node_js:
   
 before_install:
   - BASE_PATH=`pwd`
+  - ls $BASE_PATH
   
   # Install Gitbook
   - npm install gitbook-cli -g
   
 before_script:
   # Clone the repository
-  - cd $BASE_PATH
+  - cd ~
   # git clone --branch master git@github.com:hznanhai/Akka-Essentials-in-Chinese.git
-  - git clone --branch gh-pages https://github.com/hznanhai/Akka-Essentials-in-Chinese.git $BASE_PATH/book
+  - git clone --branch gh-pages https://github.com/hznanhai/Akka-Essentials-in-Chinese.git ~/book
   
 script:
   # Build gitbook
-  - cd $BASE_PATH/Akka-Essentials-in-Chinese
+  - cd $BASE_PATH
   - gitbook build
   # Cp built book to gh-pages branch && commit
-  - cp $BASE_PATH/Akka-Essentials-in-Chinese/_book/* $BASE_PATH/book/
-  - cd $BASE_PATH/book
+  - cp $BASE_PATH/_book/* ~/book/
+  - cd ~/book
   - git commit -a -m "update"
   - git push
   
