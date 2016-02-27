@@ -10,7 +10,7 @@ before_install:
 before_script:
   # Clone the repository
   - cd ~
-  - git clone --branch=master git@github.com:hznanhai/Akka-Essentials-in-Chinese.git
+  - git clone --branch master git@github.com:hznanhai/Akka-Essentials-in-Chinese.git
   - git clone --branch gh-pages git@github.com:hznanhai/Akka-Essentials-in-Chinese.git book
   
 script:
