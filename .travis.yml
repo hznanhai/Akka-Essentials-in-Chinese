@@ -6,6 +6,7 @@ node_js:
 before_install:
   # Install Gitbook
   - npm install gitbook-cli -g
+  - echo `pwd`
   
 before_script:
   # Clone the repository
