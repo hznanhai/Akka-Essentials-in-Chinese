@@ -23,7 +23,7 @@ script:
   - cd $BASE_PATH
   - gitbook build
   # Cp built book to gh-pages branch && commit
-  - cp -a $BASE_PATH/_book/ ~/book/
+  - cp -r $BASE_PATH/_book/ ~/book/
   - cd ~/book
   - git commit -a -m "update"
   - git push
