@@ -12,6 +12,8 @@ before_install:
   
 before_script:
   # Clone the repository
+  - git config --global user.email "hznanhai@gmail.com"
+  - git config --global user.name "Travis-CI"
   - cd ~
   # git clone --branch master git@github.com:hznanhai/Akka-Essentials-in-Chinese.git
   - git clone --branch gh-pages https://github.com/hznanhai/Akka-Essentials-in-Chinese.git ~/book
